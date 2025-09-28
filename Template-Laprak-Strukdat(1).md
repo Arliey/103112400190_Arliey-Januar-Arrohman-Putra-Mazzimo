@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul 1 - Codeblocks IDE & Pengenalan Bahas C++ (Bagian Pertama)</h1>
-<p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
+<p align="center">Arliey Januar Arrohman Putra Mazzimo - 103112400190</p>
 
 ## Dasar Teori
 Bahasa C++ adalah bahasa pemrograman yang mendukung paradigma pemrograman prosedural dan berorientasi objek. C++ banyak digunakan dalam pembuatan aplikasi karena memiliki performa tinggi dan kontrol penuh terhadap sistem [1]. Struktur dasar program C++ terdiri dari fungsi main() sebagai titik awal eksekusi, pernyataan input/output dengan cin dan cout, serta dapat memanfaatkan pustaka standar seperti <iostream> dan <string> [2].
