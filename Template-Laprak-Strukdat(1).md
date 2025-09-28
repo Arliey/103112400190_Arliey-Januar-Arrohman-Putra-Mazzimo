@@ -68,7 +68,7 @@ return 0;
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1]!(https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/5f37cadf5f794a653f822c28eae35c1a5ed8c587/Output-Unguided1-Modul1.png)
+![Screenshot Output Unguided 1_1](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/5f37cadf5f794a653f822c28eae35c1a5ed8c587/Output-Unguided1-Modul1.png)
 
 
 Program ini menerima dua input bilangan, lalu melakukan operasi aritmatika dasar
@@ -123,7 +123,7 @@ int main (){
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1]https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/5f37cadf5f794a653f822c28eae35c1a5ed8c587/Output-Unguided2-Modul1.png
+![Screenshot Output Unguided 2_1](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/5f37cadf5f794a653f822c28eae35c1a5ed8c587/Output-Unguided2-Modul1.png)
 
 Program ini mengubah input angka dari 0 sampai 100 ke dalam bentuk kata dalam bahasa Indonesia.
 
