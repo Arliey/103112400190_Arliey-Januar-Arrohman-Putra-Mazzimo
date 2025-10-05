@@ -223,7 +223,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/Jopan1157/103112400191_Jovan-Shandra-Bhekti/blob/main/Laprak-modul-2/ss-jwb-no1.png)
+![Screenshot Output Unguided 1_1](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/b9ef5eebdb97717ae3865976f76c869ee1b8cf83/Laprak%20Modul%202/screenshot-soal1.png)
 
 Program ini mendemonstrasikan penggunaan array 2 dimensi dan fungsi prosedural untuk melakukan berbagai operasi dasar matriks.
 
@@ -248,33 +248,36 @@ nilainya telah berubah.
 using namespace std;
 
 int main() {
-    int panjang = 10;
-    int lebar = 5;
+    int P = 10;
+    int L = 5;
     int luas = 0;
 
-    int *ptrPanjang = &panjang;
-    int *ptrLebar = &lebar;
+    int *ptrPanjang = &P;
+    int *ptrLebar = &L;
 
-    cout << "Nilai awal : " << endl;
-    cout << "panjang : " << panjang << endl;
-    cout << "lebar : " << lebar << endl;
+    cout << "Nilai awal: " << endl;
+    
+    cout << "Panjang : " << P << endl;
+    cout << "Lebar : " << L << endl;
 
     luas = (*ptrPanjang) * (*ptrLebar);
 
-    cout << "Hasil Perhitungan :" << endl;
-    cout << "luas Persegi panjang : " << luas << endl;
-    cout << "Keliling persegi panjang = " << 2 * ((*ptrPanjang) + (*ptrLebar)) << endl;
+    cout << "Hasil Perhitungan:" << endl;
+
+    cout << "Luas Persegi Panjang : " << luas << endl;
+    cout << "Keliling Persegi Panjang = " << 2 * ((*ptrPanjang) + (*ptrLebar)) << endl;
 
     *ptrPanjang = 12;
     *ptrLebar = 6;
 
     luas = (*ptrPanjang) * (*ptrLebar);
     
-    cout << "Nilai setelah di ubah melalui pointer :" << endl;
-    cout << "Panjang baru : " << panjang << endl;
-    cout << "Lebar baru : " << lebar << endl;
-    cout << "Luas baru : " << luas << endl;
-    cout << "Keliling baru = " << 2 * ((*ptrPanjang) + (*ptrLebar)) << endl;
+    cout << "Nilai Setelah Dirubah Melalui Pointer:" << endl;
+
+    cout << "Panjang Baru : " << P << endl;
+    cout << "Lebar Baru : " << L << endl;
+    cout << "Luas Baru : " << luas << endl;
+    cout << "Keliling Baru = " << 2 * ((*ptrPanjang) + (*ptrLebar)) << endl;
 
     return 0;
 }
@@ -283,7 +286,7 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_2](https://github.com/Jopan1157/103112400191_Jovan-Shandra-Bhekti/blob/main/Laprak-modul-2/ss-jwb-no2.png)
+![Screenshot Output Unguided 1_2](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/b9ef5eebdb97717ae3865976f76c869ee1b8cf83/Laprak%20Modul%202/screenshot-soal2.png)
 
 
 Program tersebut berfungsi untuk menghitung luas dan keliling persegi panjang menggunakan pointer.
@@ -294,4 +297,6 @@ dalam praktikum modul 1 ini mempelajari dasar penggunaan C++ seperti operator ar
 
 ## Referensi
 [1] Suryanto, D. (2023). Penggunaan bahasa C++ dalam perkuliahan jurusan Teknik Elektro Fakultas Teknik. Jurnal Majemuk, 9(2), 45–53.
+[2] Ginting, S. H. N., Effendi, H., Kumar, S., Marsisno, W., Sitanggang, Y. R. U., Anwar, K., ... & Smrti, N. N. E. (2024). Pengantar struktur data. Penerbit Mifandi Mandiri Digital, 1(01).
+[3] Indahyanti, U., & Rahmawati, Y. (2020). Buku Ajar Algoritma Dan Pemrograman Dalam Bahasa C++. Umsida Press, 1-146.
 <br>...
