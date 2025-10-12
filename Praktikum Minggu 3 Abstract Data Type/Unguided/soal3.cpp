@@ -39,9 +39,6 @@ void changeNilai(int arr1[3][3], int arr2[3][3], int nilai1, int nilai2){
     }
 }
 
-
-    
-
 int main(){
     int arr1[3][3] = {
         {1,2,3},

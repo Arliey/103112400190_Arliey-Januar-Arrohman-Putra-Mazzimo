@@ -164,7 +164,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/mutiara1904/103112400197_Mutiara-Fauziah/blob/main/pertemuan3_modul3/Output_unguided1_modul3.png)
+![Screenshot Output Unguided 1_1](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/b2d77cf2a8df6b9709a3aca4f1215cfefc3dd9db/Praktikum%20Minggu%203%20Abstract%20Data%20Type/Output-Unguided-1_Modul3_Arliey.png)
 
 Program ini untuk menginput dan menghitung nilai akhir beberapa mahasiswa(maksimal 10) berdasarkan nilai uts, uas, dan tugas. Struct mahasiswa untuk menyimpan data mahasiswa yang terdiri dari nama, nim, nilai uts, nilai uas, nilai tugas, dan nilai akhir. Program meminta user menginputkan data mahasiswa. Nilai akhir dihitung dengan fungsi hitungNilai.
 ### 2. soal unguided 2
@@ -174,52 +174,65 @@ Buatlah ADT pelajaran dengan file "pelajaran.h" lalu buat implementasi ADT pelaj
 ```C++
 #ifndef PELAJARAN_H
 #define PELAJARAN_H
-#include <string>
-using namespace std;
-
-struct pelajaran{
-    string namaMapel, kodeMapel;
-};
-pelajaran create_pelajaran(string namaMapel, string kodeMapel);
-void tampil_pelajaran(pelajaran pel);
-#endif
-```
-"pelajaran.cpp"
-```C++
-#include"pelajaran.h"
 #include <iostream>
 using namespace std;
 
-pelajaran create_pelajaran(string namaMapel, string kodeMapel){
-    pelajaran p;
-    p.namaMapel = namaMapel;
-    p.kodeMapel = kodeMapel;
-    return p;
+typedef struct {
+    string namaPelajaran;
+    string kodePelajaran;
+} pelajaran;
+
+pelajaran createPelajaran(string nama, string kode);
+
+void showPelajaran(pelajaran p);
+
+#endif
+```
+
+"pelajaran.cpp"
+```C++
+#include <iostream>
+#include "pelajaran.h"
+using namespace std;
+
+pelajaran createPelajaran(string nama, string kode) {
+    pelajaran P;
+    P.namaPelajaran = nama;
+    P.kodePelajaran = kode;
+    return P;
 }
-void tampil_pelajaran (pelajaran pel){
-    cout << "Nama pelajaran : " << pel.namaMapel << endl;
-    cout << "Nilai : " << pel.kodeMapel << endl;
+
+void showPelajaran(pelajaran P) {
+    cout << "Nama Pelajaran : " << P.namaPelajaran << endl;
+    cout << "Kode Pelajaran : " << P.kodePelajaran << endl;
 }
 ```
+
 "main.cpp"
 ```C++
+#include <iostream>
 #include "pelajaran.h"
-#include "pelajaran.cpp"
-
 using namespace std;
-int main(){
-    string namapel = "Struktur data";
-    string kodepel = "STD";
-    pelajaran pel = create_pelajaran(namapel, kodepel);
-    tampil_pelajaran(pel);
-    return 0;
 
+int main() {
+    string namaPelajaran, kodePelajaran;
+
+    cout << "Masukkan Nama Pelajaran : ";
+    getline(cin, namaPelajaran);
+    cout << "Masukkan Kode Pelajaran : ";
+    cin >> kodePelajaran;
+
+    pelajaran P = createPelajaran (namaPelajaran, kodePelajaran);
+
+    showPelajaran(P);
+
+    return 0;
 }
 ```
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/mutiara1904/103112400197_Mutiara-Fauziah/blob/main/pertemuan3_modul3/Output_unguided2_modul3.png)
+![Screenshot Output Unguided 2_1](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/b2d77cf2a8df6b9709a3aca4f1215cfefc3dd9db/Praktikum%20Minggu%203%20Abstract%20Data%20Type/Output-Ungguided-2_Modul3_Arliey.png)
 
 Program ini untuk mengelola dan menampilkan data pelajaran, program dibuat dalam tiga fike, yaitu file header (pelajaran.h), file implementasi (pelajaran.cpp), dan file utama (main.cpp). Dalam file header, didefinisikan struktur pelajaran yang berisi dua atribut, yaitu namaMapel untuk menyimpan nama mata pelajaran dan kodeMapel untuk menyimpan kode pelajaran. Fungsi create_pelajaran untuk membuat data pelajaran baru dan tampil_pelajaran untuk menampilkan data tersebut. Pada file implementasi (pelajaran.cpp), fungsi create_pelajaran digunakan untuk mengisi nilai atribut namaMapel dan kodeMapel. Fungsi tampil_pelajaran berfungsi menampilkan nama pelajaran dan kodenya ke layar. Di bagian main(), program membuat satu data pelajaran dengan nama “Struktur Data” dan kode “STD”.
 
@@ -229,7 +242,7 @@ Program ini untuk mengelola dan menampilkan data pelajaran, program dibuat dalam
 #include<iostream>
 using namespace std;
 
-void tampilArray(int arr[3][3]){ // ini buat nampillin array
+void showArray(int arr[3][3]){
     for(int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
             cout << arr[i][j] << " ";
@@ -239,12 +252,12 @@ void tampilArray(int arr[3][3]){ // ini buat nampillin array
     }
 }
 
-void tukarNilai(int arr1[3][3], int arr2[3][3], int nilaiA, int nilaiB){ // inibuat neker array
+void changeNilai(int arr1[3][3], int arr2[3][3], int nilai1, int nilai2){
     int *x1  = nullptr;
     int *x2 = nullptr;
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
-            if(arr1[i][j] == nilaiA){
+            if(arr1[i][j] == nilai1){
                 x1 = &arr1[i][j];
             }
         }
@@ -252,7 +265,7 @@ void tukarNilai(int arr1[3][3], int arr2[3][3], int nilaiA, int nilaiB){ // inib
 
     for(int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
-            if(arr2[i][j] == nilaiB){
+            if(arr2[i][j] == nilai2){
                 x2 = &arr2[i][j];
             }
         }
@@ -263,41 +276,38 @@ void tukarNilai(int arr1[3][3], int arr2[3][3], int nilaiA, int nilaiB){ // inib
         *x1 = *x2;
         *x2 = temp;
     }else{
-        cout << "Nilai tidak ditemukan pada array" << endl;
+        cout << "Nilai Tidak Ditemukan!" << endl;
     }
 }
 
-
-    
-
 int main(){
-    int arrA[3][3] = {
+    int arr1[3][3] = {
         {1,2,3},
         {4,5,6},
         {7,8,9}
     
     };
-    int arrB[3][3] = {
+    int arr2[3][3] = {
         {9,8,7},
         {6,5,4},
         {3,2,1}
     };
 
     cout << "Array A : " << endl;
-    tampilArray(arrA);
+    showArray(arr1);
     cout << "Array B : " << endl;
-    tampilArray(arrB);
+    showArray(arr2);
 
-    int nilaiA, nilaiB;
-    cout << "Masukan nilai dari array A : ";
-    cin >> nilaiA;
-    cout << "Masukan nilai dari array B : ";
-    cin >> nilaiB;
-    tukarNilai(arrA, arrB, nilaiA, nilaiB);
-    cout << "Array A setelah ditukar : " << endl;
-    tampilArray(arrA);
-    cout << "Array B setelah ditukar : " << endl;
-    tampilArray(arrB);
+    int nilai1, nilai2;
+    cout << "Masukan Nilai Dari Array A : ";
+    cin >> nilai1;
+    cout << "Masukan Nilai Dari Array B : ";
+    cin >> nilai2;
+    changeNilai(arr1, arr2, nilai1, nilai2);
+    cout << "Array A Setelah Ditukar : " << endl;
+    showArray(arr1);
+    cout << "Array B Setelah Ditukar : " << endl;
+    showArray(arr2);
 
     return 0;
 }
@@ -305,7 +315,7 @@ int main(){
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/mutiara1904/103112400197_Mutiara-Fauziah/blob/main/pertemuan3_modul3/Output_unguided3_modul3.png)
+![Screenshot Output Unguided 3_1](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/b2d77cf2a8df6b9709a3aca4f1215cfefc3dd9db/Praktikum%20Minggu%203%20Abstract%20Data%20Type/Output-Unguided-3_Modul3_Arliey.png)
 
 Program ini untuk menampilkan dua buah array dua dimensi (3×3) dan menukar satu elemen dari array pertama dengan satu elemen dari array kedua berdasarkan nilai yang dimasukkan oleh pengguna. Fungsi tampilArray digunakan untuk menampilkan isi array dalam bentuk matriks 3×3 ke layar. Fungsi tukarNilai berfungsi untuk mencari nilai tertentu di masing-masing array, kemudian menukar posisi kedua nilai tersebut. Pencarian dilakukan dengan cara memeriksa setiap elemen array menggunakan perulangan for, dan jika ditemukan nilai yang sesuai, program menyimpan alamat memori elemen tersebut menggunakan pointer (int *x1 dan int *x2). Setelah kedua nilai ditemukan, isi keduanya ditukar menggunakan variabel sementara (temp). Pada fungsi main, dua buah array dideklarasikan dan diisi dengan angka berbeda. Program menampilkan isi awal kedua array, kemudian meminta pengguna memasukkan satu nilai dari arrA dan satu nilai dari arrB yang ingin ditukar. Setelah proses pertukaran dilakukan, program menampilkan isi kedua array kembali untuk menunjukkan hasil perubahan.
 
@@ -315,3 +325,4 @@ Tipe data adalah klasifikasi yang menentukan jenis nilai spesifik yang dapat dis
 ## Referensi
 [1] Putra, M. T. D., Pradeka, D., & Yuniarti, A. R. (2022). BELAJAR DASAR PEMROGRAMAN DENGAN C++.<br>
 [2] Triase. (2020). Diktat Edisi Revisi Struktur Data. Universitas Islam Negeri Sumatera Utara.<br>
+[3] Muhammad Nugraha, Dasar Pemrograman Dengan C++, Materi Paling Dasar untuk Menjadi Programmer Berbagai Platform. Yogyakarta: Deepublish, 2021.<br>
