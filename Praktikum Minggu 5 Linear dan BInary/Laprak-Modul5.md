@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul 5 - Singly Linked List (Bagian Kedua)</h1>
-<p align="center">Muhammad Nur Ramadhani - 103112400154</p>
+<p align="center">Arliey Januar Arrohman Putra Mazzimo - 103112400190</p>
 
 ## Dasar Teori
 Linked List adalah jenis struktur data linier di mana setiap elemen tidak disimpan di tempat yang berdekatan, melainkan dihubungkan melalui pointer. Linked List terdiri dari rangkaian node yang saling terhubung, di mana setiap node berisi data dan alamat node berikutnya .[1]
@@ -609,7 +609,7 @@ int main() {
     Node* result = binarySearch(head, 40);
     
     if (result) {
-        cout << "\nHasil: Nilai " << result->data << " DITEMUKAN pada linked list!\n";
+        cout << "\nHasil: Nilai " << result->data << " Ditemukan Pada Linked List!\n";
         cout << "Alamat node: " << result << "\n";
         cout << "Data node: " << result->data << "\n";
         if (result->next) {
@@ -618,7 +618,7 @@ int main() {
             cout << "Node berikutnya: NULL\n";
         }
     } else {
-        cout << "\nHasil: Nilai 40 TIDAK DITEMUKAN dalam linked list!\n";
+        cout << "\nHasil: Nilai 40 Tidak Ditemukan Dalam Linked List!\n";
     }
     
  
@@ -627,7 +627,7 @@ int main() {
     result = binarySearch(head, 25);
     
     if (result) {
-        cout << "\nHasil: Nilai " << result->data << " DITEMUKAN pada linked list!\n";
+        cout << "\nHasil: Nilai " << result->data << " Ditemukan pada Linked List!\n";
         cout << "Alamat node: " << result << "\n";
         cout << "Data node: " << result->data << "\n";
         if (result->next) {
@@ -636,7 +636,7 @@ int main() {
             cout << "Node berikutnya: NULL\n";
         }
     } else {
-        cout << "\nHasil: Nilai 25 TIDAK DITEMUKAN dalam linked list!\n";
+        cout << "\nHasil: Nilai 25 Tidak Ditemukan Dalam Linked List!\n";
     }
     
   
@@ -648,7 +648,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1](https://github.com/ramaskuuuy/103112400154_Muhammad-Nur-Ramadhani/blob/main/pertemuan5_modul5/output_unguided1_modul5.png)
+![Screenshot Output Unguided 1](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/b447cd9ef806df4a9efb500589d8bc1040084cba/Praktikum%20Minggu%205/Output-Unguided-1_Modul5_Arliey.png)
 
 penjelasan unguided 1 
 
@@ -695,16 +695,16 @@ Node* linearSearch(Node* head, int key) {
     while (current != nullptr) {
         cout << "Memeriksa node " << posisi << ": " << current->data;
         if (current->data == key) {
-            cout << " (SAMA) - DITEMUKAN!\n";
+            cout << " (Sama) - Ditemukan!\n";
             return current;
         } else {
-            cout << " (tidak sama)\n";
+            cout << " (Tidak Sama)\n";
         }
         current = current->next;
         posisi++;
     }
 
-    cout << "Tidak ada node lagi yang tersisa\n";
+    cout << "Tidak Ada node Lagi Yang Tersisa\n";
     return nullptr;
 }
 
@@ -737,7 +737,7 @@ int main() {
     Node* hasil1 = linearSearch(head, cari1);
 
     if (hasil1) {
-        cout << "\nHasil: Nilai " << cari1 << " DITEMUKAN pada linked list!\n";
+        cout << "\nHasil: Nilai " << cari1 << " Ditemukan Pada Linked List!\n";
         cout << "Alamat node: " << hasil1 << "\n";
         cout << "Data node: " << hasil1->data << "\n";
         if (hasil1->next)
@@ -745,7 +745,7 @@ int main() {
         else
             cout << "Node berikutnya: NULL\n";
     } else {
-        cout << "\nHasil: Nilai " << cari1 << " TIDAK DITEMUKAN dalam linked list!\n";
+        cout << "\nHasil: Nilai " << cari1 << " Tidak Ditemukan Dalam Linked List!\n";
     }
 
    
@@ -754,7 +754,7 @@ int main() {
     Node* hasil2 = linearSearch(head, cari2);
 
     if (hasil2) {
-        cout << "\nHasil: Nilai " << cari2 << " DITEMUKAN pada linked list!\n";
+        cout << "\nHasil: Nilai " << cari2 << " Ditemukan Pada Linked List!\n";
         cout << "Alamat node: " << hasil2 << "\n";
         cout << "Data node: " << hasil2->data << "\n";
         if (hasil2->next)
@@ -762,7 +762,7 @@ int main() {
         else
             cout << "Node berikutnya: NULL\n";
     } else {
-        cout << "\nHasil: Nilai " << cari2 << " TIDAK DITEMUKAN dalam linked list!\n";
+        cout << "\nHasil: Nilai " << cari2 << " Tidak Ditemukan Dalam Linked List!\n";
     }
 
     return 0;
@@ -771,7 +771,7 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2](https://github.com/ramaskuuuy/103112400154_Muhammad-Nur-Ramadhani/blob/main/pertemuan5_modul5/output_unguided2_modul5.png)
+![Screenshot Output Unguided 2](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/b447cd9ef806df4a9efb500589d8bc1040084cba/Praktikum%20Minggu%205/Output-Unguided-2_Modul5_Arliey.png)
 
 penjelasan unguided 2
 
