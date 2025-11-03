@@ -734,7 +734,7 @@ int main() {
 
 ##### Output 1
 ![Screenshot Output Unguided 1_1](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/7221360bf93a183a67a273521e59cd3fc40349f9/Praktikum%20Minggu%206%20Double%20LInked%20List%201/Output-Unguided-1_Modul6_Arliey.png)
-(https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/7221360bf93a183a67a273521e59cd3fc40349f9/Praktikum%20Minggu%206%20Double%20LInked%20List%201/Output-Unguided-1_Modul6_Arliey%202.png)
+![Screenshot Output Unguided 1_2](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/7221360bf93a183a67a273521e59cd3fc40349f9/Praktikum%20Minggu%206%20Double%20LInked%20List%201/Output-Unguided-1_Modul6_Arliey%202.png)
 
 Program ini merupakan implementasi dari doubly linked list yang digunakan untuk mengelola data kendaraan secara dinamis. Setiap node menyimpan informasi kendaraan berupa nomor polisi, warna, dan tahun pembuatan, dengan pointer dua arah (next dan prev) untuk menghubungkan antar node. Program ini menyediakan berbagai fungsi, seperti membuat list kosong, menambahkan data kendaraan di akhir list, mencari kendaraan berdasarkan nomor polisi, menghapus data kendaraan (baik di awal, akhir, atau setelah node tertentu), serta mengecek apakah nomor polisi sudah terdaftar sebelum menambah data baru. Pada fungsi main, pengguna dapat memasukkan beberapa data kendaraan, menampilkan seluruh data yang tersimpan, mencari kendaraan tertentu, dan menghapus data berdasarkan nomor polisi.
 
