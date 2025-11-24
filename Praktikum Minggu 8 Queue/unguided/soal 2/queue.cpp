@@ -29,7 +29,6 @@ infotype dequeue(Queue &Q){
         int x = Q.info[Q.head];
         Q.head++;
 
-        // reset ketika kosong
         if (Q.head > Q.tail) {
             Q.head = 0;
             Q.tail = -1;
