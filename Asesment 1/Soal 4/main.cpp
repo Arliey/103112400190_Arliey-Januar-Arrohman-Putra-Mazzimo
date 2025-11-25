@@ -20,7 +20,6 @@ int main() {
         cout << "2 hapus data paket\n";
         cout << "3 tampilkan queue paket\n";
         cout << "4 hitung total biaya pengiriman\n";
-        cout << "";
         cin >> choice;
 
         switch (choice) {
