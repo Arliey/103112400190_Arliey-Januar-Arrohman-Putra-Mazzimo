@@ -200,4 +200,4 @@ void printStrukturMLL(listInduk &LInduk){
             indexParent++;
         }
     }
-},,
+}
