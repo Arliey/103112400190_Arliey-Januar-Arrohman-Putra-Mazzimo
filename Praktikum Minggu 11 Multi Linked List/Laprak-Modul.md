@@ -677,13 +677,15 @@ int main(){
     return 0;
 }
 ```
-## Output
-#### a. Insert
-![](Praktikum Minggu 11 Multi Linked List/Output-Unguided-soal-1_Modul13_Arliey.png)
-#### b. Search Hewan
-![](Praktikum Minggu 11 Multi Linked List/Output-Unguided-soal-1-2_Modul13_Arliey.png)
-#### c. Delete node G004
-![](Praktikum Minggu 11 Multi Linked List/Output-Unguided-soal-1-3_Modul13_Arliey.png)
+## Output 1
+![](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/75167f4711c4e3b33522ec02728a86efee339eef/Praktikum%20Minggu%2011%20Multi%20Linked%20List/Output-Unguided-soal-1_Modul13_Arliey.png)
+
+## Output 2
+![](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/75167f4711c4e3b33522ec02728a86efee339eef/Praktikum%20Minggu%2011%20Multi%20Linked%20List/Output-Unguided-soal-1-2_Modul13_Arliey.png)
+
+## Output 3
+![](https://github.com/Arliey/103112400190_Arliey-Januar-Arrohman-Putra-Mazzimo/blob/75167f4711c4e3b33522ec02728a86efee339eef/Praktikum%20Minggu%2011%20Multi%20Linked%20List/Output-Unguided-soal-1-3_Modul13_Arliey.png)
+
 Program ini merupakan implementasi Multi Linked List menggunakan bahasa C++ yang memodelkan hubungan golongan hewan sebagai node parent dan data hewan sebagai node child. Setiap node parent menyimpan satu golongan hewan dan memiliki list child yang berisi data hewan sesuai golongannya. Program menyediakan operasi pembuatan list, alokasi dan dealokasi node, penambahan dan penghapusan data parent maupun child, pencetakan seluruh struktur multilevel linked list, serta pencarian data hewan berdasarkan atribut ekor. Dengan struktur ini, program dapat menampilkan, menelusuri, dan mengelola data hewan secara bertingkat sesuai golongannya.
 ## Kesimpulan
 
